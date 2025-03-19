@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page2</title>
+    <style>
+        /* Set the background image */
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url(Sandy21_002.webp); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Center the content */
+        .content {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            max-width: 80%;
+        }
+
+        /* Style the "Welcome" text */
+        .welcome-text {
+            font-size: 5rem;
+            margin-bottom: 20px;
+        }
+
+        /* Style the description box */
+        .description-box {
+            background-color: white;
+            border: 5px solid #FFD700; /* Yellow border */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 20px auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style the paragraph text inside the description box */
+        .description-text {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: black;
+        }
+
+        /* Style the button */
+        .welcome-button {
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            background-color: rgba(0, 123, 255, 0.7);
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Change button color on hover */
+        .welcome-button:hover {
+            background-color: rgba(0, 123, 255, 1);
+        }
+
+        /* Style for the interactive image */
+        #image {
+            width: 250px;
+            height: auto;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        #image:hover {
+            transform: scale(1.2);
+            filter: brightness(1.5);
+        }
+    </style>
+</head>
+<body>
+
+  <div class="content">
+    <div class="welcome-text">Sandy Cheeks</div>
+
+    <!-- Description box with white background and yellow border -->
+    <div class="description-box">
+        <p class="description-text">
+            Sandy Cheeks is a brilliant and adventurous squirrel from Texas who lives in an air-filled glass dome in Bikini Bottom. She is a skilled scientist, inventor, and martial artist, known for her intelligence and can-do attitude. Always eager to tackle challenges head-on, Sandy often helps SpongeBob and his friends with her inventions and knowledge. Despite being the only land creature in Bikini Bottom, she adapts to underwater life by wearing a diving suit. Sandy's tough yet friendly personality makes her a valuable friend and a strong female character in the world of SpongeBob SquarePants.
+        </p>
+    </div>
+    
+    <!-- Buttons that redirect to other pages -->
+    <button class="welcome-button" onclick="window.location.href='home.html'">Home Page!!</button>
+    <button class="welcome-button" onclick="window.location.href='bikinibottom.html'">Previous</button>
+  </div>
+
+  <img id="image" src="Sandy_Cheeks.webp" alt="SpongeBob Image">
+
+  <script>
+    const image = document.getElementById("image");
+    
+    // Change cursor style on hover
+    image.addEventListener("mouseover", () => {
+      image.style.cursor = "pointer"; // Changes cursor on hover
+    });
+    
+    image.addEventListener("mouseout", () => {
+      image.style.cursor = "default"; // Reset cursor after hover
+    });
+  </script>
+
+</body>
+</html>
